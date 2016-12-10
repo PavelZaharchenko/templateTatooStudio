@@ -1,0 +1,196 @@
+@colorBlack: #000;
+@colorSubmin: #9a977a;
+@colorContact: #e7e5d0;
+@colorBackground: rgba(204, 200, 182, 1);
+@colorGallery: #afac9c;
+@colorWhite: #f2efe5;
+@colorFooter: #aeaeae;
+@colorText: #FFF;
+@colorHover: #c3c2b4;
+@colorFooter: #aeaeae;
+
+.space-between() {
+	display: flex;
+	justify-content: space-between;
+}
+// меню
+.page-nav {
+	width: 70%;
+	margin: auto;
+	align-items: center;
+	.space-between;
+	a{
+		display: inline-block;
+		text-decoration: none;
+		color: @colorBlack;
+		text-transform: uppercase;
+		font-size: 12px;
+		padding-bottom: 10px;
+		border-bottom: 2px solid transparent;
+		&:not(.logo):hover {
+			border-color: @colorBlack;
+		}
+	}
+	.logo {
+		height: 137px;
+		width: 260px;
+		background: url(../img/ink-tattoo-logo.png) center no-repeat;
+	}
+}
+.wrapper{
+	display: flex;
+}
+
+.section-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h1{
+		font-size: 34px;
+		color: @colorBlack;
+		font-weight: bold;
+		padding: 30px 50px; 
+		border: 10px solid @colorBlack;
+	}
+}
+
+// @media screen and (max-width: 769px) {
+// 	h1{
+// 		font-size: 15px;
+// 		padding: 10px 30px;
+// 		border: 5px solid #000000;
+// 	}
+// }
+// цитата
+.citation-page{
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	p{
+		color: @colorText;
+		line-height: 1.5;
+	}
+}
+// описание команды
+.team-description {
+	background-color: @colorBackground;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-top: 20px solid transparent;
+    	border-right: 50px solid @colorBackground;
+    	border-bottom: 20px solid transparent;
+    	top: 20px;
+    	left: -50px;
+	}
+	h2 {
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 24px;
+	}
+	p {
+		font-size: 14px;
+		padding: 30px;
+		padding: 10px 40px;
+	}
+	.repost {
+		align-items: center;
+		li {
+			display: inline-block;
+			&:not(:last-child) {
+				margin-right: 40px;
+			}
+		}
+		a {
+			display: inline-block;
+			width: 35px;
+			height: 35px;
+			background: no-repeat;
+			background-position: center;
+		}
+		.facebook {
+			background-image: url(../img/fb.png);
+		}
+		.twitter {
+			background-image: url(../img/tw.png);
+		}
+		.somet {
+			background-image: url(../img/T.png);
+		}
+		.somein {
+			background-image: url(../img/in.png);
+		}
+		.instagram {
+			background-image: url(../img/insta.png);
+		}
+		.google {
+			background-image: url(../img/g+.png);
+		}
+	}
+}
+// блок с ссылками
+.repost {
+	align-items: center;
+	li {
+		display: inline-block;
+		&:not(:last-child) {
+			margin-right: 40px;
+		}
+	}
+	a {
+		display: inline-block;
+		width: 35px;
+		height: 35px;
+		background: no-repeat;
+		background-position: center;
+	}
+	.facebook {
+		background-image: url(../img/fb.png);
+	}
+	.twitter {
+		background-image: url(../img/tw.png);
+	}
+	.somet {
+		background-image: url(../img/T.png);
+	}
+	.somein {
+		background-image: url(../img/in.png);
+	}
+	.instagram {
+		background-image: url(../img/insta.png);
+	}
+	.google {
+		background-image: url(../img/g+.png);
+	}
+}
+// форма
+.form() {
+	.news-leter__mail,
+	.say-hello__send{
+		width: 90%;
+		padding: 10px;
+		margin-bottom: 20px;
+		
+	}
+	.news-leter__mail {
+	border: 1px solid @colorBlack;
+	}
+	.say-hello__send{
+		color: @colorText;
+		background-color: @colorSubmin;
+	}
+}
+
+// background-size: cover;
+.cover() {
+	background-position: center;
+	background-size: cover;
+}

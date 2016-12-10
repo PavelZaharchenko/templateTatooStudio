@@ -1,0 +1,51 @@
+.citation {
+	.citation-page;
+	background-image: url(../img/livello-26.png);
+	.cover;
+	p {
+		font-size: 26px;
+		text-align: center;
+		width: 745px;
+		position: relative;
+		&:before {
+			content: '';
+		    display: inline-block;
+		    width: 56px;
+		    height: 33px;
+		    background: url(../img/-1.png);
+		    position: absolute;
+		    left: -50px;
+    		top: -50px;
+		}
+		&:after {
+			content: '';
+		    display: inline-block;
+		    width: 56px;
+		    height: 33px;
+		    background: url(../img/-.png);
+		    position: absolute;
+		    top: 130px;
+    		right: -50px;
+		}
+	}
+	span {
+		float: right;
+		text-transform: uppercase;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.citation{
+		height: 150px;
+		p{
+			font-size: 18px;
+			width: 500px;
+			&:before {
+				display: none;
+			}
+			&:after{
+				display: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,100 @@
+.contact {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	height: 900px;
+	background-color: @colorBackground;
+}
+.contact-us {
+	padding: 50px; 
+	width: 50%;
+	flex-wrap: wrap;
+	line-height: 1.5;
+	.section-logo;
+	h1 {
+		text-transform: uppercase;
+		margin: auto; 
+	}
+	.contact-us-discript {
+		text-align: center;
+		font-size: 18px;
+		
+	}
+	.info,
+	.work-hours {
+		align-items: stretch;
+		font-size: 18px;
+		width: 45%;
+		margin: auto;
+		margin-top: 30px;
+		span {
+			font-weight: bold;
+		}
+	}
+}
+// Блок обратной связи
+.write-to-us {
+	// задать падинг родителю
+	margin: 95px auto;
+	.form();
+	.news-leter__mail {
+		background-color: @colorBackground;
+		margin-bottom: 50px;
+	}
+	.news-leter__name,
+	.news-leter__message {
+		background-color: @colorBackground;
+		width: 90%;
+		padding: 10px;
+		margin-bottom: 20px;
+		border: 1px solid @colorBlack;
+		margin-bottom: 50px;
+	}
+	.news-leter__message{
+		height: 300px;
+	}
+	.say-hello__send{
+		width: 70%;
+		border: 1px solid transparent;
+	}
+	.news-leter{
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.contact {
+		font-size: 18px;
+		flex-wrap: wrap;
+		.contact-us {
+			width: 100%;
+			padding: 20px;
+			h1{
+				font-size: 15px;
+				padding: 10px 30px;
+				border: 5px solid #000000;
+				margin-bottom: 20px;
+			}
+			.work-hours{
+				text-align: right;
+			}
+			.repost{
+				margin: 20px;
+			}
+		}
+	}
+	.write-to-us {
+		margin: 0 auto;
+		.news-leter__name,
+		.news-leter__message,
+		.news-leter__mail {
+			width: 80%;
+			margin-bottom: 20px;
+		}
+		.news-leter__message{
+			height: 100px;
+		}
+	}
+	
+}

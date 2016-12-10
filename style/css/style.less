@@ -1,0 +1,38 @@
+@import url(mixin.less);
+@import url(header.less);
+@import url(about-us.less);
+@import url(gallery-one.less);
+@import url(citation.less);
+@import url(team.less);
+@import url(citation-block.less);
+@import url(gallery-block.less);
+@import url(contact.less);
+@import url(footer.less);
+
+// @font-face{
+// 	font-family: 'Raleway';
+// 	src: url('https://fonts.googleapis.com/css?family=Raleway');
+// }
+// @font-face{
+// 	font-family: 'LMRomanSlant10';
+// 	src: url(../fonts/LMRomanSlant10/style-regular.ttf);
+// }
+*{
+	box-sizing: border-box;
+}
+.conteiner {
+	width: 100%;
+	max-width: 1500px;
+	margin: auto;
+	font-size: 0;
+	background: @colorWhite;
+}
+// шапка
+iframe{
+	width: 100%;
+}
+@media screen and (max-width: 769px) {
+	iframe{
+		height: 300px;
+	}
+}

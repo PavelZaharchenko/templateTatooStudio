@@ -1,0 +1,54 @@
+.column-two {
+	width: 50%;
+	min-height: 500px;
+}
+.about-logo {
+	background: center no-repeat;
+	background-image: url(../img/img-studio-bg.png);
+	.cover;
+	.section-logo;
+}
+.about-description {
+	padding: 100px 125px 0;
+	.icon {
+		width: 84px;
+		height: 58px;
+		margin: 0 auto 50px;
+		background-image: url(../img/tattoo-design.png);
+	}
+	.text-top {
+		text-align: center;
+		font-size: 18px;
+		margin-bottom: 30px;
+
+	}
+	.text-bottom {
+		font-size: 16px;
+
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.wrapper {
+		flex-wrap: wrap;
+		.column-two {
+			width: 100%;
+			min-height: 150px; 
+			flex-wrap: wrap;
+			h1{
+				font-size: 15px;
+				padding: 10px 30px;
+	    		border: 5px solid #000000;
+			}
+		}
+		.about-description{
+			padding: 20px 20px;
+			.icon {
+				margin: 0 auto 15px;
+			}
+			.text-bottom {
+				text-align: center;
+			}
+		}
+	}
+}
