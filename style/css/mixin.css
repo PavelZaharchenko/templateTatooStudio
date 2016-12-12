@@ -1,0 +1,146 @@
+.page-nav {
+  width: 70%;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.page-nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid transparent;
+}
+.page-nav a:not(.logo):hover {
+  border-color: #000000;
+}
+.page-nav .logo {
+  height: 137px;
+  width: 260px;
+  background: url(../img/ink-tattoo-logo.png) center no-repeat;
+}
+.wrapper {
+  display: flex;
+}
+.section-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-logo h1 {
+  font-size: 34px;
+  color: #000000;
+  font-weight: bold;
+  padding: 30px 50px;
+  border: 10px solid #000000;
+}
+.citation-page {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.citation-page p {
+  color: #ffffff;
+  line-height: 1.5;
+}
+.team-description {
+  background-color: #ccc8b6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.team-description:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 50px solid #ccc8b6;
+  border-bottom: 20px solid transparent;
+  top: 20px;
+  left: -50px;
+}
+.team-description h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.team-description p {
+  font-size: 14px;
+  padding: 30px;
+  padding: 10px 40px;
+}
+.team-description .repost {
+  align-items: center;
+}
+.team-description .repost li {
+  display: inline-block;
+}
+.team-description .repost li:not(:last-child) {
+  margin-right: 40px;
+}
+.team-description .repost a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: no-repeat;
+  background-position: center;
+}
+.team-description .repost .facebook {
+  background-image: url(../img/fb.png);
+}
+.team-description .repost .twitter {
+  background-image: url(../img/tw.png);
+}
+.team-description .repost .somet {
+  background-image: url(../img/T.png);
+}
+.team-description .repost .somein {
+  background-image: url(../img/in.png);
+}
+.team-description .repost .instagram {
+  background-image: url(../img/insta.png);
+}
+.team-description .repost .google {
+  background-image: url(../img/g+.png);
+}
+.repost {
+  align-items: center;
+}
+.repost li {
+  display: inline-block;
+}
+.repost li:not(:last-child) {
+  margin-right: 40px;
+}
+.repost a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: no-repeat;
+  background-position: center;
+}
+.repost .facebook {
+  background-image: url(../img/fb.png);
+}
+.repost .twitter {
+  background-image: url(../img/tw.png);
+}
+.repost .somet {
+  background-image: url(../img/T.png);
+}
+.repost .somein {
+  background-image: url(../img/in.png);
+}
+.repost .instagram {
+  background-image: url(../img/insta.png);
+}
+.repost .google {
+  background-image: url(../img/g+.png);
+}

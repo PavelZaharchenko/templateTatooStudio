@@ -105,7 +105,7 @@
   border-right: 50px solid #ccc8b6;
   border-bottom: 20px solid transparent;
   top: 20px;
-  left: -50px;
+  left: -45px;
 }
 .team-description h2 {
   font-weight: bold;
@@ -127,7 +127,7 @@
   display: inline-block;
 }
 .team-description .repost li:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 .team-description .repost a {
   display: inline-block;
@@ -164,7 +164,7 @@
   display: inline-block;
 }
 .repost li:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 .repost a {
   display: inline-block;
@@ -334,8 +334,8 @@
           flex-wrap: wrap;
 }
 .gallery .works-item {
-  width: 250px;
-  height: 250px;
+  width: 16.6%;
+  height: 16.6%;
   position: relative;
   overflow: hidden;
 }
@@ -487,10 +487,13 @@
 .our-team .corey,
 .our-team .kat,
 .our-team .leter {
-  height: 500px;
-  width: 500px;
+  width: 32%;
   background-position: center;
   background-size: cover;
+}
+.our-team .man,
+.our-team .girl {
+  width: 36%;
 }
 .our-team .team {
   background-image: url(../img/img-bg.png);
@@ -544,7 +547,7 @@
   border-right: 50px solid #ccc8b6;
   border-bottom: 20px solid transparent;
   top: 20px;
-  left: -50px;
+  left: -45px;
 }
 .our-team .corey h2 {
   font-weight: bold;
@@ -566,7 +569,7 @@
   display: inline-block;
 }
 .our-team .corey .repost li:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 .our-team .corey .repost a {
   display: inline-block;
@@ -621,7 +624,7 @@
   border-right: 50px solid #ccc8b6;
   border-bottom: 20px solid transparent;
   top: 20px;
-  left: -50px;
+  left: -45px;
 }
 .our-team .kat h2 {
   font-weight: bold;
@@ -643,7 +646,7 @@
   display: inline-block;
 }
 .our-team .kat .repost li:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 .our-team .kat .repost a {
   display: inline-block;
@@ -790,8 +793,7 @@
   width: 100%;
 }
 .gallery-block .title {
-  width: 600px;
-  height: 300px;
+  width: 40%;
   text-transform: uppercase;
   background-color: #ccc8b6;
   display: -webkit-box;
@@ -828,7 +830,7 @@
           justify-content: flex-start;
 }
 .gallery-block .works-item {
-  width: 300px;
+  width: 20%;
   height: 300px;
   position: relative;
   overflow: hidden;
