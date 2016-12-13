@@ -6,18 +6,23 @@
 		flex-wrap: wrap;
 	}
 	.works-item{
-		width: 16.6%;
-		height: 16.6%;
+		width: 16.667%;
+		// height: 16.667%;
 		// изменил на % 
 		position: relative;
 		overflow: hidden;
+		// &:before{
+		// 	content: "";
+		// 	display: block;
+		// 	padding-top: 100%;
+		// }
 		&:hover .hover-block{
 			top: 0;
 		}
 	}
 	img{
-		width: 250px;
-		height: 250px;
+		width: 100%;
+		// height: 250px;
 	}
 	.hover-block {
 		display: flex;
@@ -25,15 +30,20 @@
 		align-items: flex-end;
 		padding: 25px; 
 		flex-wrap: wrap;
-		height: 250px;
-		width: 250px;
+		height: 100%;
+		width: 100%;
 		// проблема с ховером
 		position: absolute;
-		top: -250px;
+		top: -100%;
 		left: 0;
 		opacity: 0.8;
 		background-color: fadeout(@colorBackground, 25%);
 		transition: .5s;
+		// &:before{
+		// 	content: "";
+		// 	display: block;
+		// 	padding-top: 100%;
+		// }
 		li{
 			width: 30px;
 			height: 30px;
@@ -60,9 +70,10 @@
 	}
 }
 
-// @media screen and (max-width: 769px){
-// 	.photo-works{
-// 		height: 121px;
-// 		width: 121px;
-// 	}
-// }
+@media screen and (max-width: 769px){
+	.gallery{
+		.works-item{
+			width: 25%;
+		}
+	}
+}

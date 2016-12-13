@@ -334,8 +334,7 @@
           flex-wrap: wrap;
 }
 .gallery .works-item {
-  width: 16.6%;
-  height: 16.6%;
+  width: 16.667%;
   position: relative;
   overflow: hidden;
 }
@@ -343,8 +342,7 @@
   top: 0;
 }
 .gallery img {
-  width: 250px;
-  height: 250px;
+  width: 100%;
 }
 .gallery .hover-block {
   display: -webkit-box;
@@ -363,10 +361,10 @@
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  height: 250px;
-  width: 250px;
+  height: 100%;
+  width: 100%;
   position: absolute;
-  top: -250px;
+  top: -100%;
   left: 0;
   opacity: 0.8;
   background-color: rgba(204, 200, 182, 0.75);
@@ -401,6 +399,11 @@
 }
 .gallery .hover-block .like {
   background-image: url(../img/like.png);
+}
+@media screen and (max-width: 769px) {
+  .gallery .works-item {
+    width: 25%;
+  }
 }
 .citation {
   height: 350px;
@@ -729,9 +732,8 @@
     padding: 10px 30px;
     border: 5px solid #000000;
   }
-  .our-team .Corey,
-  .our-team .Kat {
-    height: 200px;
+  .our-team .corey,
+  .our-team .kat {
     width: 100%;
   }
   .our-team .man,
@@ -739,7 +741,7 @@
     display: none;
   }
   .our-team .leter {
-    height: 260px;
+    height: 250px;
     width: 100%;
   }
 }
@@ -831,7 +833,6 @@
 }
 .gallery-block .works-item {
   width: 20%;
-  height: 300px;
   position: relative;
   overflow: hidden;
 }
@@ -839,8 +840,7 @@
   top: 0;
 }
 .gallery-block img {
-  width: 300px;
-  height: 300px;
+  width: 100%;
 }
 .gallery-block .hover-block {
   display: -webkit-box;
@@ -859,10 +859,10 @@
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  height: 300px;
-  width: 300px;
+  height: 100%;
+  width: 100%;
   position: absolute;
-  top: -300px;
+  top: -100%;
   left: 0;
   opacity: 0.8;
   background-color: rgba(204, 200, 182, 0.75);
@@ -907,6 +907,9 @@
     font-size: 15px;
     padding: 10px 30px;
     border: 5px solid #000000;
+  }
+  .gallery-block .works-item {
+    width: 25%;
   }
 }
 .contact {
@@ -1088,10 +1091,11 @@
 }
 .conteiner {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1200px;
   margin: auto;
   font-size: 0;
   background: #f2efe5;
+  overflow-x: hidden;
 }
 iframe {
   width: 100%;

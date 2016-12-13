@@ -6,7 +6,7 @@
 	// align-items: flex-start;
 	.title{
 		width: 40%;
-		// height: 300px;
+	
 		text-transform: uppercase;
 		background-color: @colorBackground;
 		.section-logo;
@@ -19,7 +19,7 @@
 	.works-item{
 		width: 20%;
 		// изменил на %
-		height: 300px;
+		// height: 300px;
 		position: relative;
 		overflow: hidden;
 		&:hover .hover-block{
@@ -27,8 +27,8 @@
 		}
 	}
 	img{
-		width: 300px;
-		height: 300px;
+		width: 100%;
+		// height: 300px;
 	}
 	.hover-block {
 		display: flex;
@@ -36,10 +36,10 @@
 		align-items: flex-end;
 		padding: 25px; 
 		flex-wrap: wrap;
-		height: 300px;
-		width: 300px;
+		height: 100%;
+		width: 100%;
 		position: absolute;
-		top: -300px;
+		top: -100%;
 		left: 0;
 		opacity: 0.8;
 		background-color: fadeout(@colorBackground, 25%);
@@ -85,9 +85,11 @@
 	    		border: 5px solid #000000;
 			}
 		}
+		.works-item{
+			width: 25%;
+		}
 	}
 }
-
 
 // @media screen and (max-width: 769px) {
 // 	.gallery-block{
