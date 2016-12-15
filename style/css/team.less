@@ -6,7 +6,6 @@
 	.corey,
 	.kat,
 	.leter {
-		// height: 500px;
 		width: 32%;
 		.cover;
 	}
@@ -119,7 +118,18 @@
 		}
 	}
 }
-
+@media screen and (max-width: 568px) { 
+	.our-team {
+		.man,
+		.girl{
+			width: 50%;
+			height: 50%;
+		}
+		.team-description{
+			width: 50%;
+		}
+	}
+}
 @media screen and (max-width: 320px) {
 	.our-team {
 		.team {
@@ -129,7 +139,12 @@
 				border: 3px solid #000000;
 			}
 		}
+		.man,
+		.girl {
+			display: none;
+		}
 		.team-description {
+			width: 100%;
 			h2{
 				margin-top: 10px;
 				font-size: 12px;
