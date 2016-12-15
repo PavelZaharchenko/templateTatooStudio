@@ -80,7 +80,7 @@
 				text-align: right;
 			}
 			.repost{
-				margin: 20px;
+				margin: 8px;
 			}
 		}
 	}
@@ -97,4 +97,73 @@
 		}
 	}
 	
+}
+
+@media screen and (max-width: 320px) {
+	.contact{
+		height: 650px;
+		.contact-us {
+			h1 {
+				font-size: 10px;
+	    		padding: 5px 20px;
+	    		border: 3px solid #000000;
+			}
+			.contact-us-discript {
+				font-size: 12px;
+			}
+			.info,
+			.work-hours {
+				width: 100%;
+				text-align: center;
+				align-items: stretch;
+				font-size: 12px;
+				margin: auto;
+				margin-top: 20px;
+				span {
+					font-weight: bold;
+				}
+			}
+			.repost {
+				a{
+					width: 15px;
+					height: 15px;
+				}
+				.facebook {
+					background-image: url(../img/fb-mini.png);
+				}
+				.twitter {
+					background-image: url(../img/tw-mini.png);
+				}
+				.somet {
+					background-image: url(../img/T-mini.png);
+				}
+				.somein {
+					background-image: url(../img/in-mini.png);
+				}
+				.instagram {
+					background-image: url(../img/insta-mini.png);
+				}
+				.google {
+					background-image: url(../img/g+-mini.png);
+				}
+			}
+		}
+	}
+	.write-to-us {
+		margin: 0 auto;
+		.news-leter__name,
+		.news-leter__message,
+		.news-leter__mail {
+			width: 60%;
+			padding: 2px;
+			margin-bottom: 20px;
+		}
+		.news-leter__message{
+			height: 50px;
+		}
+		.say-hello__send{
+			width: 40%;
+			padding: 2px;
+		}
+	}
 }
