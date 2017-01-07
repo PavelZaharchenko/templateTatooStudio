@@ -64,7 +64,7 @@
   border-right: 50px solid #ccc8b6;
   border-bottom: 20px solid transparent;
   top: 20px;
-  left: -50px;
+  left: -45px;
 }
 .team-description h2 {
   font-weight: bold;
@@ -83,7 +83,7 @@
   display: inline-block;
 }
 .team-description .repost li:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 .team-description .repost a {
   display: inline-block;
@@ -91,6 +91,7 @@
   height: 35px;
   background: no-repeat;
   background-position: center;
+  background-size: 100% 100%;
 }
 .team-description .repost .facebook {
   background-image: url(../img/fb.png);
@@ -117,7 +118,7 @@
   display: inline-block;
 }
 .repost li:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 .repost a {
   display: inline-block;
